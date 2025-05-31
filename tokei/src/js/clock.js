@@ -1,11 +1,12 @@
 class Clock {
     constructor() {
+        this.timeElement = document.getElementById('time');
         this.intervalId = null;
-        this.time = 0;
     }
 
     start() {
         if (!this.intervalId) {
+            this.update(); // 即座に時刻を表示
             this.intervalId = setInterval(() => {
                 this.update();
             }, 1000);
@@ -20,15 +21,9 @@ class Clock {
     }
 
     update() {
-        this.time++;
-        this.displayTime();
+        const now = new Date();
+        this.timeElement.textContent = now.toLocaleTimeString();
     }
-
-    displayTime() {
-        const hours = String(Math.floor(this.time / 3600)).padStart(2, '0');
-        const minutes = String(Math.floor((this.time % 3600) / 60)).padStart(2, '0');
-        const seconds = String(this.time % 60).padStart(2, '0');
-        console.log(`${hours}:${minutes}:${seconds}`);
     }
 }
 
