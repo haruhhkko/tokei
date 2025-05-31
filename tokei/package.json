@@ -1,14 +1,12 @@
 {
   "name": "tokei",
   "version": "1.0.0",
-  "description": "A simple clock web application.",
+  "description": "Simple clock web app",
   "main": "src/js/app.js",
   "scripts": {
-    "start": "live-server src",
-    "test": "jest"
+    "start": "live-server src --port=3000"
   },
   "devDependencies": {
-    "jest": "^27.0.0",
     "live-server": "^1.2.2"
   },
   "author": "Your Name",

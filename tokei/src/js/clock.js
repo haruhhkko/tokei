@@ -22,8 +22,7 @@ class Clock {
 
     update() {
         const now = new Date();
-        this.timeElement.textContent = now.toLocaleTimeString();
-    }
+        this.timeElement.textContent = now.toLocaleTimeString('ja-JP');
     }
 }
 

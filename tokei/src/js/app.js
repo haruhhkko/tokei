@@ -1,6 +1,6 @@
 import Clock from './clock.js';
 
-document.addEventListener('DOMContentLoaded', () => {
+window.addEventListener('DOMContentLoaded', () => {
     const clock = new Clock();
     
     document.getElementById('start').addEventListener('click', () => {
