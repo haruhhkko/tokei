@@ -7,9 +7,9 @@
     "start": "live-server src",
     "test": "jest"
   },
-  "dependencies": {},
   "devDependencies": {
-    "jest": "^27.0.0"
+    "jest": "^27.0.0",
+    "live-server": "^1.2.2"
   },
   "author": "Your Name",
   "license": "MIT"
