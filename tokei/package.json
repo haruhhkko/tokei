@@ -1,0 +1,16 @@
+{
+  "name": "tokei",
+  "version": "1.0.0",
+  "description": "A simple clock web application.",
+  "main": "src/js/app.js",
+  "scripts": {
+    "start": "live-server src",
+    "test": "jest"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "jest": "^27.0.0"
+  },
+  "author": "Your Name",
+  "license": "MIT"
+}
